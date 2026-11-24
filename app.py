@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 st.set_page_config(page_title="Medicine Mirror", page_icon="💊", layout="centered")
 
 # ----------------------------------------------------------------- settings
-OPENROUTER_MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash"]   # tried first; put your chosen free vision models before this
+OPENROUTER_MODELS = ["heygen/heygen-voice-1-turbo:free","anthropic/claude-sonnet-5.5:batch","nvidia/nemotron-3-ultra-550b-a55b:free","perplexity/pplx-decider-v1.3:free","gemini-4-hydrogen", "gemini-3.8-flash","recraft/recraft-v4.1-flash-v2:free","google/gemma-4-31b-it:free","fish-audio/s2.1-pro-free:free"]   # tried first; put your chosen free vision models before this
 MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash"]   # Gemini backup, tried in this order
 TRUST_OPENROUTER_BOXES = False   # highlight boxes from OpenRouter models are not drawn unless you set True
 MAX_PHOTOS = 4          # photos per scan
